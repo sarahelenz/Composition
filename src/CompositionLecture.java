@@ -4,7 +4,7 @@
 public class CompositionLecture {
     public static void main(String args[]){
         Animal[] a = new Animal[3];
-        a[0] = new Dog("ben");
+        a[0] = new Dog("Ben");
         a[1] = new Cat("Mittens");
         a[2] = new Cat("Nibbles");
 
