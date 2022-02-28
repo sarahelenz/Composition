@@ -2,11 +2,15 @@
  * Created by bob.brown on 3/9/17.
  */
 public class PetStore {
-    private Animal[] allAnimals;
+    public Animal[] allAnimals;
 
     public PetStore(Animal[] animalArray)
     {
-        allAnimals = animalArray;
+        //allAnimals = animalArray;
+        allAnimals = new Animal[animalArray.length];
+        for(int x = 0; x<animalArray.length; x++){
+            allAnimals[x] = animalArray[x];
+        }
     }
 
     public void addCat(Cat c, int position){

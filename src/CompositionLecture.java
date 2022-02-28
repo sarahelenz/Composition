@@ -3,7 +3,13 @@
  */
 public class CompositionLecture {
     public static void main(String args[]){
+        Animal[] a = new Animal[3];
+        a[0] = new Dog("ben");
+        a[1] = new Cat("Mittens");
+        a[2] = new Cat("Nibbles");
 
+        PetStore PetCo = new PetStore(a);
+        ((Cat)PetCo.allAnimals[1]).playWithYarn();
     }
 
     public static void printArray(Animal[] array)
